@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShowerHead, Utensils, ShoppingBag, WifiIcon, Car, SwimmingPool } from 'lucide-react';
+import { ShowerHead, Utensils, ShoppingBag, WifiIcon, Car } from 'lucide-react';
 import SectionTitle from '@/components/SectionTitle';
 
 const Camping = () => {
@@ -110,7 +109,7 @@ const Camping = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
                 <div className="bg-camping-darkgreen p-3 rounded-full mr-4">
-                  <SwimmingPool className="h-6 w-6 text-white" />
+                  <WifiIcon className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="text-xl font-display font-bold">Piscine</h3>
               </div>
