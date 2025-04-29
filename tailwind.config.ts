@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,13 +62,27 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        // Couleurs personnalisées pour le camping
+        camping: {
+          darkgreen: '#4a6741',
+          green: '#6a994e',
+          lightgreen: '#a7c957',
+          ochre: '#bc6c25',
+          lightocher: '#dda15e',
+          beige: '#f2e8cf',
+          cream: '#fefae0',
+        }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+        display: ['Playfair Display', 'serif'],
+      },
 			keyframes: {
 				'accordion-down': {
 					from: {
@@ -84,11 +99,33 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+        'fade-in': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(10px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          }
+        },
+        'zoom-in': {
+          '0%': {
+            opacity: '0',
+            transform: 'scale(0.95)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'scale(1)'
+          }
+        }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+        'fade-in': 'fade-in 0.5s ease-out forwards',
+        'zoom-in': 'zoom-in 0.5s ease-out forwards'
 			}
 		}
 	},
