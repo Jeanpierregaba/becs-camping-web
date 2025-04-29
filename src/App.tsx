@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import Home from "@/pages/Home";
 import Camping from "@/pages/Camping";
 import Accommodations from "@/pages/Accommodations";
+import Activities from "@/pages/Activities";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/NotFound";
 
@@ -27,8 +28,9 @@ const App = () => (
               <Route path="/" element={<Home />} />
               <Route path="/camping" element={<Camping />} />
               <Route path="/hebergements" element={<Accommodations />} />
+              <Route path="/activites" element={<Activities />} />
               <Route path="/contact" element={<Contact />} />
-              {/* Les autres routes seront ajoutées ultérieurement */}
+              <Route path="/drome" element={<Home />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

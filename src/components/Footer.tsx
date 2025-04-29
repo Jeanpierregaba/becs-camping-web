@@ -64,18 +64,13 @@ const Footer = () => {
             <h3 className="text-xl font-display font-bold mb-4">Infos utiles</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/tarifs" className="hover:text-camping-beige transition-colors">
-                  Tarifs et réservations
-                </Link>
-              </li>
-              <li>
                 <Link to="/drome" className="hover:text-camping-beige transition-colors">
                   Découvrir la Drôme
                 </Link>
               </li>
               <li>
-                <Link to="/faq" className="hover:text-camping-beige transition-colors">
-                  FAQ
+                <Link to="/contact" className="hover:text-camping-beige transition-colors">
+                  Réservation
                 </Link>
               </li>
               <li>

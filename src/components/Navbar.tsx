@@ -17,8 +17,6 @@ const Navbar = () => {
     { name: 'Hébergements', path: '/hebergements' },
     { name: 'Activités', path: '/activites' },
     { name: 'La Drôme', path: '/drome' },
-    { name: 'Tarifs', path: '/tarifs' },
-    { name: 'Réservation', path: '/reservation' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -48,7 +46,7 @@ const Navbar = () => {
           {/* Bouton de réservation (visible uniquement sur desktop) */}
           <div className="hidden md:block">
             <Link
-              to="/reservation"
+              to="/contact"
               className="btn-primary"
             >
               Réserver maintenant
@@ -87,7 +85,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Link
-              to="/reservation"
+              to="/contact"
               className="btn-primary text-center mt-4"
               onClick={() => setIsMenuOpen(false)}
             >

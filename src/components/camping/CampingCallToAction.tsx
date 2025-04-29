@@ -16,7 +16,7 @@ const CampingCallToAction = () => {
           <Link to="/hebergements" className="bg-white hover:bg-camping-beige text-camping-darkgreen py-3 px-6 rounded-md transition-all duration-300">
             Voir nos hébergements
           </Link>
-          <Link to="/reservation" className="border-2 border-white hover:bg-white hover:text-camping-darkgreen text-white py-3 px-6 rounded-md transition-all duration-300">
+          <Link to="/contact" className="border-2 border-white hover:bg-white hover:text-camping-darkgreen text-white py-3 px-6 rounded-md transition-all duration-300">
             Réserver maintenant
           </Link>
         </div>

@@ -1,12 +1,14 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
+import { LucideIcon } from 'lucide-react';
 
 interface ActivityCardProps {
   title: string;
   image: string;
   description: string;
   onSite: boolean;
+  icon?: LucideIcon;
   className?: string;
 }
 
@@ -15,10 +17,11 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
   image,
   description,
   onSite,
+  icon: Icon,
   className,
 }) => {
   return (
-    <div className={cn("card-activity group", className)}>
+    <div className={cn("bg-white rounded-lg shadow-md overflow-hidden h-full", className)}>
       <div className="relative h-48 overflow-hidden">
         <img
           src={image}
@@ -33,8 +36,11 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
       </div>
       
       <div className="p-5">
-        <h3 className="text-lg font-display font-bold mb-2">{title}</h3>
-        <p className="text-gray-600 text-sm line-clamp-3">{description}</p>
+        <div className="flex items-center mb-3">
+          {Icon && <Icon className="h-5 w-5 text-camping-darkgreen mr-2" />}
+          <h3 className="text-lg font-display font-bold">{title}</h3>
+        </div>
+        <p className="text-gray-600 text-sm">{description}</p>
       </div>
     </div>
   );
