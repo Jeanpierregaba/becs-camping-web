@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Hiking, Fish, Sun, Kayak, Horse, Mountain, Paragliding } from 'lucide-react';
+import { Bike, Fish, Sun, Mountain, Activity } from 'lucide-react';
 import SectionTitle from '@/components/SectionTitle';
 import ActivityCard from '@/components/ActivityCard';
 
@@ -10,7 +10,7 @@ const Activities = () => {
       title: "Randonnées",
       description: "Profitez de magnifiques sentiers de randonnée autour du camping, offrant des vues panoramiques sur les 3 becs et la vallée de la Drôme.",
       image: "/placeholder.svg",
-      icon: Hiking,
+      icon: Bike,
       onSite: true
     },
     {
@@ -31,14 +31,14 @@ const Activities = () => {
       title: "Kayak",
       description: "Descendez la Drôme en kayak et découvrez des paysages à couper le souffle. Location de kayaks et organisation de sorties depuis le camping.",
       image: "/placeholder.svg",
-      icon: Kayak,
+      icon: Activity,
       onSite: true
     },
     {
       title: "Équitation",
       description: "Le centre équestre partenaire à 3km du camping propose des balades à cheval pour tous les niveaux dans les collines environnantes.",
       image: "/placeholder.svg",
-      icon: Horse,
+      icon: Activity,
       onSite: false
     },
     {
@@ -52,14 +52,14 @@ const Activities = () => {
       title: "Parapente",
       description: "Découvrez la Drôme vue du ciel avec des vols en parapente. Plusieurs sites de décollage à proximité du camping.",
       image: "/placeholder.svg",
-      icon: Paragliding,
+      icon: Activity,
       onSite: false
     },
     {
       title: "Montgolfière",
       description: "Vivez une expérience inoubliable avec un vol en montgolfière au lever du soleil, survolant les paysages spectaculaires de la Drôme.",
       image: "/placeholder.svg",
-      icon: Sun, // Remplacé par Sun car la montgolfière n'est pas disponible dans lucide-react
+      icon: Sun,
       onSite: false
     }
   ];
@@ -80,6 +80,7 @@ const Activities = () => {
                 description={activity.description}
                 image={activity.image}
                 onSite={activity.onSite}
+                icon={activity.icon}
               />
             </div>
           ))}
